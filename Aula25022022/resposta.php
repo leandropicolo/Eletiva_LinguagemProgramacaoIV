@@ -8,11 +8,46 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Arquivo Resposta</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>Cálculos</h1>
 
+    <?php
+        $valor1 =$_POST['valor1']; //valor1 é o name do item no arquivo index
+        $valor2 =$_POST['valor2'];
+        echo "valor 1 é: $valor1 e valor 2 é: $valor2";
+        echo "<br/>";
+        echo "Multiplicação:".($valor1 * $valor2);
+        echo "<br/>";
+        echo "Soma:".($valor1 + $valor2);
+        echo "<br/>";
+        echo "Subtração: ".($valor1 - $valor2);
+        echo "<br/>";
+        if ($valor2 != 0){
+            echo "Divisão: ".($valor1 - $valor2);
+        }
+        else{
+            echo "Não é possível divisão por zero ";
+        }
+        echo "<br/>";
+        if ($valor1 % 2 == 0){
+            echo "Valor 1 é par";
+            echo "<br/>";
+        }
+        else{
+            echo "Valor 1 é impar";
+            echo "<br/>";
+        }
+        if ($valor2 % 2 == 0){
+            echo "Valor 2 é par";
+            echo "<br/>";
+        }
+        else{
+            echo "Valor 2 é impar";
+            echo "<br/>";
+        }
+    ?>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
