@@ -11,17 +11,17 @@
     <title>Arquivo de Resultado</title>
   </head>
   <body class="container mt-5">
-    <h1>Troco</h1>
+    <h1>Resultado</h1>
 
     <?php
         $valor1 =$_POST['valor1']; //valor1 é o name do item no arquivo index
         $valor2 =$_POST['valor2'];
-        if ($valor1 >= $valor2){
-            echo "O troco deve ser de :".($valor1 - $valor2);
+        if ($valor1 >= 0 && $valor2 >= 0){
+            echo "O valor a pagar deve ser de :".doubleval($valor1 * $valor2);
             echo "<br/>";
         }
         else{
-            echo "O valor pago não é suficiente";
+            echo "Inconsistencia nos valores";
         }
         
     ?>
