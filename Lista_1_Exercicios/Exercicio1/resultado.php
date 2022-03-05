@@ -10,7 +10,7 @@
 
     <title>Arquivo de Resultado</title>
   </head>
-  <body>
+  <body class="container mt-5">
     <h1>Troco</h1>
 
     <?php
