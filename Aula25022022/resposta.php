@@ -25,7 +25,7 @@
         echo "Subtração: ".($valor1 - $valor2);
         echo "<br/>";
         if ($valor2 != 0){
-            echo "Divisão: ".($valor1 - $valor2);
+            echo "Divisão: ".($valor1 / $valor2);
         }
         else{
             echo "Não é possível divisão por zero ";
@@ -47,6 +47,16 @@
             echo "Valor 2 é impar";
             echo "<br/>";
         }
+
+        $resultado = $valor1 / 2 == 0 ? "Valor 1 é par" : "Valor 1 é impar";
+        echo $resultado;
+        $resultado = $valor2 / 2 == 0 ? "Valor 2 é par" : "Valor 2 é impar";
+        echo $resultado;
+
+        $i = 10;
+        echo "<br/>";
+        echo "Valor 3 * i= ".($i * 3);
+        
     ?>
     <!-- Optional JavaScript; choose one of the two! -->
 
