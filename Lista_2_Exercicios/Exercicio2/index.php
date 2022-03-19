@@ -10,6 +10,7 @@
   </head>
   <body class="container mt-5">
     <h1>Exercicio 2</h1>
+    <h2>Insira valores entre 1 e 20</h2>
     <form action="resultado.php" method="post">
       <div class="row">
         <?php
@@ -39,11 +40,18 @@
           }
         ?>
       </div>
+      
       <div class="row">
-        <div class="col"> 
+        <div class="col">
+          <label for="valorproc" class="label-control">
+            Informe o valor procurado:
+          </label>
+          <div class="col-1">
+            <input type="number" name="valorproc" id="valorproc" class="form-control"/>
+          </div>
           <button class="btn btn-primary mt-2">
-            Enviar
-          </button>
+            Procurar
+          </button>            
         </div>
       </div>
     </form>

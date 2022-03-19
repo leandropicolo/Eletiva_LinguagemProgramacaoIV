@@ -12,7 +12,18 @@
     <h1>Resposta Exercicio 2</h1>
 
     <?php
+      $valorproc = $_POST["valorproc"];
+      for ($i=1; $i<=20; $i++){
+        $vetor[$i] = $_POST["valor$i"];
+      }
 
+      
+      foreach ($vetor as $chave => $valor){
+        if ($valor == $valorproc){
+          echo "Posição do valor procurado: $chave";
+          echo "<br>";
+        }
+      }
      
 
 
