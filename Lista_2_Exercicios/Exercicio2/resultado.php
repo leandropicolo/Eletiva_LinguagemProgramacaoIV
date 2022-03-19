@@ -17,16 +17,19 @@
         $vetor[$i] = $_POST["valor$i"];
       }
 
-      
+      $qtde = 0;
       foreach ($vetor as $chave => $valor){
-        if ($valor == $valorproc){
+        if ($valor<1 || $valor>10){
+          echo "Existem valores inválidos nos dados";
+          break;
+        }
+        else ($valor == $valorproc){
+          $qtde = $qtde + 1;
           echo "Posição do valor procurado: $chave";
           echo "<br>";
-        }
+        }        
       }
-     
-
-
+      echo "O valor $valorproc está em $qtde posições.";
     ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
