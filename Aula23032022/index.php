@@ -20,8 +20,18 @@
   <br/>
 
   <?php
-    $valor = 10004.789;
-    echo "R$".(number_format($valor, 2, ',', '.'));
+    function formatarNumero($numero){
+      echo "R$".(number_format($numero, 2, ',', '.'));
+    }
+
+    function retornarNumero($numero){
+      return "R$".(number_format($numero, 2, ',', '.'));
+    }
+
+    formatarNumero(10004.789);
+    echo "<br/>";
+    echo retornarNumero(897.111);
+
   ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
