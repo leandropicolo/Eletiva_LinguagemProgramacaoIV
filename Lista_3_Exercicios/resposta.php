@@ -8,8 +8,26 @@
 
     <title>Resposta - Exercicio 1</title>
   </head>
-  <body>
+  <body class="container">
     <h1>Resposta - Exercicio 1</h1>
+
+    <?php
+        function verificarData($dia, $mes, $ano){
+            if (checkdate($mes, $dia, $ano))
+                echo "Essa é a data válida!!";
+            else{
+                echo "Essa não é uma data válida!!";
+            }
+        }
+
+        $diaInformado = $_POST['dia'];
+        $mesInformado = $_POST['mes'];
+        $anoInformado = $_POST['ano'];
+
+        verificarData($diaInformado, $mesInformado, $anoInformado);
+
+    ?>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
