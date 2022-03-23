@@ -12,19 +12,20 @@
     <h1>Resposta - Exercicio 1</h1>
 
     <?php
-        function verificarData($dia, $mes, $ano){
-            if (checkdate($mes, $dia, $ano))
-                echo "Essa é a data válida!!";
-            else{
-                echo "Essa não é uma data válida!!";
+        for ($i=1; $i<=10; $i++){
+          $vetor[$i]= $_POST["nome$i"];
+        }
+
+        function ordenaNome($vetor){
+            $ordenado = sort($vetor);
+            for ($i=1; $i<=10; $i++){
+               echo $ordenado[$i];
             }
         }
 
-        $diaInformado = $_POST['dia'];
-        $mesInformado = $_POST['mes'];
-        $anoInformado = $_POST['ano'];
+        ordenaNome($vetor);
+        
 
-        verificarData($diaInformado, $mesInformado, $anoInformado);
 
     ?>
 
