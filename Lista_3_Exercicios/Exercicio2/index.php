@@ -17,7 +17,6 @@
         ?>
           <div class="col">
             <label for="nome<?= $i ?>" class="label-control">
-              <?php echo $i ?>
               Informe o <?= $i ?>° nome:
             </label>
             <input type="text" name="nome<?= $i ?>" id="nome<?= $i ?>" class="form-control"/>

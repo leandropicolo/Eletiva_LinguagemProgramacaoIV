@@ -6,26 +6,28 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Resposta - Exercicio 1</title>
+    <title>Resposta - Exercicio 3</title>
   </head>
   <body class="container">
-    <h1>Resposta - Exercicio 1</h1>
+    <h1>Resposta - Exercicio 3</h1>
 
     <?php
-        function verificarData($dia, $mes, $ano){
-            if (checkdate($mes, $dia, $ano))
-                echo "Essa é a data válida!!";
+        function compararNumero($num1, $num2){
+            if ($num1 > $num2){
+              return $num2;
+            }
+            else if ($num1 < $num2){
+              return $num1;
+            }
             else{
-                echo "Essa não é uma data válida!!";
+              return "nenhum, os números são iguais";
             }
         }
 
-        $diaInformado = $_POST['dia'];
-        $mesInformado = $_POST['mes'];
-        $anoInformado = $_POST['ano'];
+        $num1 = $_POST['numero1'];
+        $num2 = $_POST['numero2'];
 
-        verificarData($diaInformado, $mesInformado, $anoInformado);
-
+        echo "O menor número é: ".compararNumero($num1, $num2);
     ?>
 
 

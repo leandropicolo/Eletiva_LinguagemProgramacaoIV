@@ -15,18 +15,26 @@
         for ($i=1; $i<=10; $i++){
           $vetor[$i]= $_POST["nome$i"];
         }
+         
+        echo "Vetor original: <br>";
+
+        for ($i=1; $i<=10; $i++){
+          echo $vetor[$i];
+          echo "<br>";
+        }
+
+        echo "Vetor ordenado: <br>";
 
         function ordenaNome($vetor){
-            $ordenado = sort($vetor);
-            for ($i=1; $i<=10; $i++){
-               echo $ordenado[$i];
-            }
+            sort($vetor);
+            for ($i=0; $i<10; $i++){
+              echo $vetor[$i];
+              echo "<br>";
+           }
+            
         }
 
         ordenaNome($vetor);
-        
-
-
     ?>
 
 
