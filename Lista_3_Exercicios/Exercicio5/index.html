@@ -6,32 +6,27 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Exercicio 1</title>
+    <title>Exercicio 5</title>
   </head>
   <body class="container">
-    <h1>Exercicio 1</h1>
+    <h1>Exercicio 5 - IMC</h1>
 
-    <form action="resposta.php" method="POST">
+    <form action="resultado.php" method="POST">
         <div class="row">
             <div class="col">
-                <label for="dia" class="label-control">Dia:</label>
-                <input type="number" class="form-control" id="dia" name="dia"/>
+                <label for="altura" class="label-control">Altura:</label>
+                <input type="text" class="form-control" id="altura" name="altura"/>
             </div>
 
             <div class="col">
-              <label for="mes" class="label-control">Mês:</label>
-              <input type="number" class="form-control" id="mes" name="mes"/>
-            </div>
-
-            <div class="col">
-              <label for="ano" class="label-control">Ano:</label>
-              <input type="number" class="form-control" id="ano" name="ano"/>
+              <label for="peso" class="label-control">Peso:</label>
+              <input type="text" class="form-control" id="peso" name="peso"/>
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <button type="submit" class="btn btn-warning mt-2">
-                    Verificar data
+                    Calcular IMC
                 </button>
             </div>
         </div>
