@@ -12,9 +12,31 @@
     <h1>Sistema em PHP</h1>
     
     <?php 
-        $email = $_POST['email'];
-        setcookie("usuario", $email, time() + (86400 * 1), "/"); //qdo utiliza a barra, o cookie pode ser acessado de qualquer local da pagina
-        echo "Seja bem vindo ".$_COOKIE['usuario'];
+        if ($_POST){
+            $email = $_POST['email'];
+            $senha = $_POST['senha'];
+            /*setcookie("usuario", $email, time() + (86400 * 1), "/"); //qdo utiliza a barra, o cookie pode ser acessado de qualquer local da pagina
+            echo "Seja bem vindo ".$_COOKIE['usuario'];*/
+
+            session_start();
+            if (($email == "v@v.com") && ($senha == "123")){
+                $_SESSION['usuario'] = $email;
+                $_SESSION['acesso'] = true;
+                echo "Bem vindo usuário ".$_SESSION['usuario'];
+                echo '<a href="sair.php">Sair</a>';
+            }else{
+                header('Location: index.php');
+                exit;
+            }
+        }else{
+            session_start();
+            if ($_SESSION['acesso'] == true){
+                echo "Seja bem vindo usuário".$_SESSION['usuario'];
+            }else{
+                header('Location: index.php');
+                exit;
+            }
+        }
     ?>
 
 
