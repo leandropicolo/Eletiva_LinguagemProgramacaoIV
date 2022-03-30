@@ -25,7 +25,7 @@
                             <div class="row">
                                 <div class="col">
                                     <label for="email" classe="label-control">
-                                        informe o e-mail:
+                                        Informe o e-mail:
                                     </label>
                                     <input type="email" name="email" id="email" class="form-control">
                                 </div>
@@ -33,7 +33,7 @@
                             <div class="row">
                                 <div class="col">
                                     <label for="senha" classe="label-control">
-                                        informe a senha:
+                                        Informe a senha:
                                     </label>
                                     <input type="password" name="senha" id="senha" class="form-control">
                                 </div>
