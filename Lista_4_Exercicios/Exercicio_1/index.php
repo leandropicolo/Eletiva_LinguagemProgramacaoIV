@@ -25,8 +25,8 @@
                                     <input type="text" name="voltas" id="voltas" class="form-control">
                                 </div>
                             </div>
-                    </div>
-                    <div class="modal-footer">
+                          </div>
+                        <div class="modal-footer">
                         <button type="submit" class="btn btn-primary">Digitar tempos</button>
                         </form>
                     </div>
