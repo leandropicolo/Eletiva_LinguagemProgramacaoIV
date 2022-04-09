@@ -12,27 +12,19 @@
     <h1>Dados da Corrida - Exercicio 1</h1>
 
     <div class="row">
-        <div class="col">
-            <div class="modal mt-5" tabindex="-1" style="display: block">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                    <div class="modal-body">
-                        <form action="voltas.php" method="POST">
-                                <div class="col">
-                                    <label for="voltas" classe="label-control">
-                                        Digite a quantidade de voltas:
-                                    </label>
-                                    <input type="text" name="voltas" id="voltas" class="form-control">
-                                </div>
-                            </div>
-                          </div>
-                        <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary">Digitar tempos</button>
-                        </form>
-                    </div>
+        <div class="col">            
+            <form action="voltas.php" method="POST">
+                    <div class="col">
+                        <label for="voltas" classe="label-control">
+                            Digite a quantidade de voltas:
+                        </label>
+                        <input type="text" name="voltas" id="voltas" class="form-control">
                     </div>
                 </div>
-            </div>
+              </div>
+            <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Digitar tempos</button>
+            </form>
         </div>
     </div>
 
