@@ -17,6 +17,7 @@
         <div class="row">
         <?php
           session_start();
+          $_SESSION['voltas'] = $voltas;
           if ($voltas > 0){
             for($i=1; $i<=$voltas; $i++){
           ?>
