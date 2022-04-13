@@ -15,20 +15,22 @@
         $voltas = $_POST['voltas'];
     ?>
         <div class="row">
-        <?php
-          session_start();
-          $_SESSION['voltas'] = $voltas;
-          if ($voltas > 0){
-            for($i=1; $i<=$voltas; $i++){
-          ?>
-            <div class="col">
-              <label for="voltas<?= $i ?>" class="label-control">
-                Informe a <?= $i ?>ª volta:
-              </label>
-            <input type="text" name="voltas<?= $i ?>" id="voltas<?= $i ?>" class="form-control"/>
+          <form action="calculos.php" method="POST">
+          <?php
+            session_start();
+            $_SESSION['voltas'] = $voltas;
+            if ($voltas > 0){
+              for($i=1; $i<=$voltas; $i++){
+            ?>
+              <div class="col">
+                <label for="voltas<?= $i ?>" class="label-control">
+                  Informe a <?= $i ?>ª volta:
+                </label>
+              <input type="text" name="voltas<?= $i ?>" id="voltas<?= $i ?>" class="form-control"/>
+              </div>
+            
             </div>
           
-          </div>
           <?php
             }
 
@@ -40,7 +42,7 @@
               </button>
             </div>
           </div>
-          
+          </form>
           <?php
           } else {
             header('Location: index.php');
