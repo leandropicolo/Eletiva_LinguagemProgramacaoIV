@@ -13,7 +13,7 @@
 
     <?php
       $soma = 0;
-      $voltas = $_POST['voltas'];
+      $voltas = $_SESSION['voltas'];
       for($i=1; $i<=$voltas; $i++){
         $soma = $soma + $_POST["voltas$i"];
       }
