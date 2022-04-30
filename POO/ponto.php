@@ -11,6 +11,12 @@ class Ponto{
         $this->sety($y);
     }
 
+    public function calcularDistancia(Ponto $p){
+        $valorx = pow(($p->getx- $this->x), 2);
+        $valory = pow(($p->gety- $this->y), 2);
+        return sqrt($valorx + $valory);
+    }
+
     private static function setContador(){
         self::$contador++;
     }
