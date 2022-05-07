@@ -18,6 +18,8 @@ require_once __DIR__.'/vendor/autoload.php';
 
     $router->get('/exemplo', 'Aluno\Leandro\Controller\ExercicioController::exibir');
 
+    $router->post('/exemplo-resultado', 'Aluno\Leandro\Controller\ExercicioController::exibirResultado')
+
     //Adicionar as rotas válidas acima
 
     $result = $router->handler();

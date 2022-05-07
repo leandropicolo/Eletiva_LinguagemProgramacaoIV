@@ -10,22 +10,22 @@
   </head>
   <body class="container">
     <h1>Exemplo</h1>
-
-    <div class="row">
-        <div class="col">
-            <label class="label-control">Valor 1</label>
-            <input class="form-control" name="valor1" type="text"/>
+    <form method="POST" action="/exemplo-resultado">
+        <div class="row">
+            <div class="col">
+                <label class="label-control">Valor 1</label>
+                <input class="form-control" name="valor1" type="text"/>
+            </div>
+            <div class="col">
+                <label class="label-control">Valor 2</label>
+                <input class="form-control" name="valor2" type="text"/>
+            </div>
         </div>
-        <div class="col">
-            <label class="label-control">Valor 2</label>
-            <input class="form-control" name="valor2" type="text"/>
+        <div class="row mt-2">
+            <div class="col">
+                <button type="submit" class="btn btn-primary">OK</button>
+            </div>
         </div>
-    </div>
-    <div class="row mt-2">
-        <div class="col">
-            <button type="submit" class="btn btn-primary">OK</button>
-        </div>
-    </div>
 
 
 
