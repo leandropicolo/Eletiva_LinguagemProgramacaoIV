@@ -26,6 +26,12 @@
                 <button type="submit" class="btn btn-primary">OK</button>
             </div>
         </div>
+    </form>
+
+    <?php
+        if (isset($soma))
+            echo "O valor da soma é $soma";
+    ?>
 
 
 
