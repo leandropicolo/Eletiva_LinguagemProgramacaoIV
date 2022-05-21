@@ -2,6 +2,8 @@
 
 namespace Aluno\Leandro\Model\DAO;
 
+use PDO;
+
 class Conexao{
 
     public static function conectar(){
