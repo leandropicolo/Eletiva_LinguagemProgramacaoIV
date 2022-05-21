@@ -35,7 +35,9 @@ class ClientesDAO{
     public function excluir($id){
         try{
             $sql = "DELETE FROM `clientes` WHERE id = :id";
-
+            $p = Conexao::conectar()->prepare($sql);
+            $p->bindValue(":id", $id->getId());
+            return $p->execute();
         } catch(\Exception $e){
             return false;
         }
@@ -44,7 +46,7 @@ class ClientesDAO{
     public function consultar(){
         try{
             $sql = "SELECT * FROM clientes";
-
+            return Conexao::conectar()->query($sql);
         } catch(\Exception $e){
             return false;
         }
@@ -54,7 +56,9 @@ class ClientesDAO{
     public function consultarPorId($id){
         try{
             $sql = "SELECT * FROM clientes WHERE id = :id";
-
+            $p = Conexao::conectar()->prepare($sql);
+            $p->bindValue(":id", $id);
+            return $p->execute();
         } catch(\Exception $e){
             return false;
         }
