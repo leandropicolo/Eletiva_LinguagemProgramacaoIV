@@ -1,0 +1,16 @@
+{
+    "name": "aluno/leandro",
+    "description": "Estee e um exemplo de projeto usando PHP e mySQL",
+    "autoload": {
+        "psr-4": {
+            "Aluno\\Leandro\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Leandro Picolo",
+            "email": "leandro.picolo@fatec.sp.gov.br"
+        }
+    ],
+    "require": {}
+}
