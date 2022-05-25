@@ -22,7 +22,9 @@ require_once __DIR__.'/vendor/autoload.php';
 
     $router->get('/cliente/novo', 'Aluno\Leandro\Controller\ClientesController::abrirFormularioInserir');
 
-    $router->post('/cliente/inserir', 'Aluno\Leandro\Controller\ClientesController::inserir_cliente');
+    $router->post('/cliente/inserir', 'Aluno\Leandro\Controller\ClientesController::inserirCliente');
+
+    $router->get('/clientes', 'Aluno\Leandro\Controller\ClientesController::abrirListaClientes');
 
     //Adicionar as rotas válidas acima
 
