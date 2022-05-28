@@ -30,6 +30,8 @@ require_once __DIR__.'/vendor/autoload.php';
 
     $router->post('/cliente/editar/{id}', 'Aluno\Leandro\Controller\ClientesController::editarCliente');
 
+    $router->get('/cliente/excluir/{id}', 'Aluno\Leandro\Controller\ClientesController::excluirCliente');
+
     //Adicionar as rotas válidas acima
 
     $result = $router->handler();
