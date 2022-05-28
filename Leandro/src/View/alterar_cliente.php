@@ -13,19 +13,19 @@
     
     <div class="border container mt-3">
         <h1>Alterar Cliente</h1>
-        <form action="/cliente/modificar/{<?= $id ?>}" method="post">
+        <form action="/cliente/editar/<?= $params[1] ?>" method="post">
             <div class="row">
                 <div class="col-5">
                     <label for="nome" class="label-control" name="nome" id="nome">Informe o Nome:</label>
-                    <input type="text" class="form-control" name="nome" id="nome"/>
+                    <input type="text" class="form-control" name="nome" id="nome" value="<?= $resultado['nome'] ?>"/>
                 </div>
                 <div class="col-5">
                     <label for="email" class="label-control" name="email" id="email">Informe o E-mail:</label>
-                    <input type="text" class="form-control" name="email" id="email"/>
+                    <input type="text" class="form-control" name="email" id="email" value="<?= $resultado['email'] ?>"/>
                 </div>
                 <div class="col-2">
                     <label for="idade" class="label-control" name="idade" id="idade">Informe o Idade:</label>
-                    <input type="text" class="form-control" name="idade" id="idade"/>
+                    <input type="text" class="form-control" name="idade" id="idade" value="<?= $resultado['idade'] ?>"/>
                 </div>
             </div>
             <div class="row">
