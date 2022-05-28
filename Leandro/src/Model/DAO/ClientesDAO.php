@@ -36,7 +36,7 @@ class ClientesDAO{
         try{
             $sql = "DELETE FROM `clientes` WHERE id = :id";
             $p = Conexao::conectar()->prepare($sql);
-            $p->bindValue(":id", $id->getId());
+            $p->bindValue(":id", $id);
             return $p->execute();
         } catch(\Exception $e){
             return false;
