@@ -26,6 +26,8 @@ require_once __DIR__.'/vendor/autoload.php';
 
     $router->get('/clientes', 'Aluno\Leandro\Controller\ClientesController::abrirListaClientes');
 
+    $router->get('/cliente/alterar/{id}', 'Aluno\Leandro\Controller\ClientesController::abrirFormularioAlterar');
+
     //Adicionar as rotas válidas acima
 
     $result = $router->handler();

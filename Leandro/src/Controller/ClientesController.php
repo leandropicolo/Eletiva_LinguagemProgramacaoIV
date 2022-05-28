@@ -11,6 +11,12 @@ class ClientesController{
         require_once "../src/View/inserir_cliente.php";
     }
 
+    public static function abrirFormularioAlterar($id){
+        $dao = new ClientesDAO();
+        $resultado = $dao->consultarPorId($id);
+        require_once "../src/View/alterar_cliente.php";
+    }
+
     public static function abrirListaClientes(){
         $dao = new ClientesDAO();
         $resultado = $dao->consultar();
