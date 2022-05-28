@@ -28,6 +28,8 @@ require_once __DIR__.'/vendor/autoload.php';
 
     $router->get('/cliente/alterar/{id}', 'Aluno\Leandro\Controller\ClientesController::abrirFormularioAlterar');
 
+    $router->post('/cliente/editar/{id}', 'Aluno\Leandro\Controller\ClientesController::editarCliente');
+
     //Adicionar as rotas válidas acima
 
     $result = $router->handler();
