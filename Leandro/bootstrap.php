@@ -24,13 +24,23 @@ require_once __DIR__.'/vendor/autoload.php';
 
     $router->post('/cliente/inserir', 'Aluno\Leandro\Controller\ClientesController::inserirCliente');
 
-    $router->get('/clientes', 'Aluno\Leandro\Controller\ClientesController::abrirListaClientes');
+    $router->get('/cliente', 'Aluno\Leandro\Controller\ClientesController::abrirListaClientes');
 
     $router->get('/cliente/alterar/{id}', 'Aluno\Leandro\Controller\ClientesController::abrirFormularioAlterar');
 
     $router->post('/cliente/editar/{id}', 'Aluno\Leandro\Controller\ClientesController::editarCliente');
 
     $router->get('/cliente/excluir/{id}', 'Aluno\Leandro\Controller\ClientesController::excluirCliente');
+
+    $router->get('/produto', 'Aluno\Leandro\Controller\ProdutosController::abrirListaProdutos');
+
+    $router->get('/produto/alterar/{id}', 'Aluno\Leandro\Controller\ProdutosController::abrirFormularioAlterar');
+
+    $router->post('/produto/editar/{id}', 'Aluno\Leandro\Controller\ProdutosController::editarProduto');
+
+    $router->get('/produto/excluir/{id}', 'Aluno\Leandro\Controller\ProdutosController::excluirProduto');
+
+
 
     //Adicionar as rotas válidas acima
 
