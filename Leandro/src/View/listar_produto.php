@@ -46,8 +46,8 @@
             <td><?= $linha['descricao'] ?></td>
             <td><?= $linha['valor'] ?></td>
             <td> 
-                <a href="/cliente/alterar/<?= $linha['id'] ?>" class="btn btn-warning">Alterar</a> 
-                <a href="/cliente/excluir/<?= $linha['id'] ?>"class="btn btn-danger">Excluir</a> 
+                <a href="/produto/alterar/<?= $linha['id'] ?>" class="btn btn-warning">Alterar</a> 
+                <a href="/produto/excluir/<?= $linha['id'] ?>"class="btn btn-danger">Excluir</a> 
             </td>
             </tr>
             <?php } ?>            
