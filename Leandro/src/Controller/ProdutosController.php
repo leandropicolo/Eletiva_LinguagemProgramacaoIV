@@ -34,7 +34,7 @@ class ProdutosController{
         }else{
             $resposta = false;
         }
-        ClientesController::abrirListaProdutos();
+        ProdutosController::abrirListaProdutos();
     }
 
     public static function editarProdutos($params){
@@ -49,7 +49,7 @@ class ProdutosController{
         }else{
             $resposta = false;
         }
-        ClientesController::abrirListaProdutos();
+        ProdutosController::abrirListaProdutos();
     }
 
     public static function excluirProduto($params){        
@@ -59,7 +59,7 @@ class ProdutosController{
         }else{
             $resposta = false;
         }
-        ClientesController::abrirListaProdutos();
+        ProdutosController::abrirListaProdutos();
     }
 
 }

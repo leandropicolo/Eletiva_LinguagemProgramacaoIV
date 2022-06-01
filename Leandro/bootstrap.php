@@ -32,6 +32,10 @@ require_once __DIR__.'/vendor/autoload.php';
 
     $router->get('/cliente/excluir/{id}', 'Aluno\Leandro\Controller\ClientesController::excluirCliente');
 
+    $router->get('/produto/novo', 'Aluno\Leandro\Controller\ProdutosController::abrirFormularioInserir');
+
+    $router->post('/produto/inserir', 'Aluno\Leandro\Controller\ProdutosController::inserirProduto');
+    
     $router->get('/produto', 'Aluno\Leandro\Controller\ProdutosController::abrirListaProdutos');
 
     $router->get('/produto/alterar/{id}', 'Aluno\Leandro\Controller\ProdutosController::abrirFormularioAlterar');
