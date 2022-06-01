@@ -37,7 +37,7 @@ class ProdutosController{
         ProdutosController::abrirListaProdutos();
     }
 
-    public static function editarProdutos($params){
+    public static function editarProduto($params){
         $produto = new Produto();
         $produto->setDescricao($_POST['descricao']);
         $produto->setValor($_POST['valor']);
